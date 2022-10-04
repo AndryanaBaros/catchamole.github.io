@@ -55,15 +55,20 @@ holes.forEach((hole) => {
 
             clearInterval(intervalRandomHoles);
             clearInterval(intervalCountdown);
-            button.style.backgroundColor = "pink";
+            button.style.backgroundColor = "#EA4C89";
 
             win.textContent = "You Win!";
+            currentTime = 0;
+            currentClik = 0;
         }
     });
 });
 
 function start() {
     moveMouse();
+    click.textContent = 0;
+    elapsedTime.textContent = 0;
+    win.textContent = "";
     elementContainerScore.style.display = "flex";
     button.style.backgroundColor = "grey";
 }
