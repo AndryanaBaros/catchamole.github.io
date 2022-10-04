@@ -1,0 +1,77 @@
+div.DivContainer {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.DivContainer div.DivContainerHole {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+div.DivContainer div.DivContainerHole .hole {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid grey;
+}
+
+div.DivContainer div.DivContainerHole .mouse {
+  background-image: url("https://raw.githubusercontent.com/AndryanaBaros/training/master/Mole.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.DivContainer div.DivContainerScore {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.DivContainer div.DivContainerScore span {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: green;
+}
+
+div.DivContainer div.DivContainerScore div.DivContainerClick {
+  margin-bottom: -30px;
+}
+
+div.DivContainer div.DivContainerScore div.DivContainerClick, div.DivContainer div.DivContainerScore div.DivContainerTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.DivContainer div.DivContainerScore div.DivContainerClick h4, div.DivContainer div.DivContainerScore div.DivContainerTime h4 {
+  margin-right: 10px;
+  font-weight: 100;
+}
+
+div.DivContainer button {
+  padding: 10px 15px;
+  background-color: #EA4C89;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
